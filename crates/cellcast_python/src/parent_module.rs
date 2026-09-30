@@ -7,7 +7,7 @@ mod cellcast_module {
     use super::models;
 }
 
-#[pymodule]
+#[pymodule(submodule)]
 mod models {
     #[pymodule_export]
     use crate::classes::stardist_classes::PyStarDist2D;
