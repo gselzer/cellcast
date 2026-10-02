@@ -1,3 +1,11 @@
+"""
+Cell segmentation models.
+
+This module contains the supported cellcast cell segmentation models. Each
+model is first initialized on the GPU or CPU with either fetched pre-trained
+weights or custom weights.
+"""
+
 from _typeshed import Incomplete
 from collections.abc import Sequence
 from typing import Any, final
