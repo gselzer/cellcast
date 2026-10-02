@@ -5,6 +5,12 @@ use pyo3::prelude::*;
 use crate::error::cellcast_error_to_pyerr;
 use cellcast::models::{StarDist2D, StarDist3D};
 
+/// A StarDist2D instance segmentation model.
+///
+/// An initialized StarDist2D instance segmentation model with pretrained or
+/// custom weights for 2D fluorescence (`fluo`) or H&E-stained (`he`) images.
+/// The model runs on either a CPU or GPU backend as determined at
+/// initialization time.
 #[pyclass(name = "StarDist2D")]
 pub struct PyStarDist2D(StarDist2D);
 
@@ -235,6 +241,11 @@ impl PyStarDist2D {
     }
 }
 
+/// A StarDist3D instance segmentation model.
+///
+/// An initialized StarDist3D instance segmentation model with pretrained or
+/// custom weights for 3D volumetric fluorescence (`fluo`) images. The model
+/// runs on either a CPU or GPU backend as determined at initialization time.
 #[pyclass(name = "StarDist3D")]
 pub struct PyStarDist3D(StarDist3D);
 

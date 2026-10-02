@@ -39,7 +39,7 @@ enum StarDist2DModels {
 
 /// A StarDist2D instance segmentation model.
 ///
-/// Initializes a StarDist2D instance segmentation model with pretrained or
+/// An initialized StarDist2D instance segmentation model with pretrained or
 /// custom weights for 2D fluorescence (`fluo`) or H&E-stained (`he`) images.
 /// The model runs on either a CPU or GPU backend as determined at
 /// initialization time.

@@ -36,7 +36,7 @@ enum StarDist3DModels {
 
 /// A StarDist3D instance segmentation model.
 ///
-/// Initializes a StarDist3D instance segmentation model with pretrained or
+/// An initialized StarDist3D instance segmentation model with pretrained or
 /// custom weights for 3D volumetric fluorescence (`fluo`) images. The model
 /// runs on either a CPU or GPU backend as determined at initialization time.
 #[derive(Debug)]
